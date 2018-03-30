@@ -152,6 +152,24 @@
           }
          }
         }
+        "yt" {
+         :type :expr, :by "root", :at 1522371134045, :id "H1xUB9bj5f"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1522371135664, :text "[]", :id "H1xUB9bj5fleaf"}
+          "j" {:type :leaf, :by "root", :at 1522371140654, :text "\"highlight.js", :id "SJ-uB5-jcf"}
+          "r" {:type :leaf, :by "root", :at 1522371141367, :text ":as", :id "HybpBcbiqG"}
+          "v" {:type :leaf, :by "root", :at 1522371142913, :text "hljs", :id "S10r9Wi9f"}
+         }
+        }
+        "yv" {
+         :type :expr, :by "root", :at 1522371117664, :id "r1I45Zo5f"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1522371119121, :text "[]", :id "r1I45Zo5fleaf"}
+          "j" {:type :leaf, :by "root", :at 1522371120089, :text "\"escape-html", :id "Bkzw4qboqG"}
+          "r" {:type :leaf, :by "root", :at 1522371121484, :text ":as", :id "r1Y45-s5M"}
+          "v" {:type :leaf, :by "root", :at 1522371121921, :text "escape-html", :id "rJ54qbocG"}
+         }
+        }
        }
       }
      }
@@ -416,6 +434,13 @@
                      "j" {:type :leaf, :by "root", :at 1522256388064, :text ":cover", :id "Hy5b3bqBFcf"}
                     }
                    }
+                   "t" {
+                    :type :expr, :by "root", :at 1522256388064, :id "S1jBDZsqG"
+                    :data {
+                     "T" {:type :leaf, :by "root", :at 1522370373870, :text ":background-position", :id "SJtWnZ9HYcf"}
+                     "j" {:type :leaf, :by "root", :at 1522370376708, :text ":center", :id "Hy5b3bqBFcf"}
+                    }
+                   }
                    "v" {
                     :type :expr, :by "root", :at 1522256388064, :id "Byo-3-qBF5G"
                     :data {
@@ -495,7 +520,7 @@
               :type :expr, :by "root", :at 1522256388064, :id "r1d73bqrYqM"
               :data {
                "T" {:type :leaf, :by "root", :at 1522256388064, :text "comp-md-block", :id "r1Fm3bqHtqM"}
-               "j" {:type :leaf, :by "root", :at 1522256388064, :text "\"```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.7.0\nClojureScript 1.9.908\nNode.js v8.4.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```", :id "ry57nb5SYqf"}
+               "j" {:type :leaf, :by "root", :at 1522371405077, :text "\"```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.8.0\nClojureScript 1.9.946\nNode.js v9.2.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```", :id "ry57nb5SYqf"}
                "r" {
                 :type :expr, :by "root", :at 1522256388064, :id "BJiXnZ5rF5f"
                 :data {
@@ -654,11 +679,66 @@
           :type :expr, :by "root", :at 1522256815526, :id "S1O3oStcz"
           :data {
            "T" {:type :leaf, :by "root", :at 1522256822266, :text "comp-md-block", :id "S1O3oStczleaf"}
-           "j" {:type :leaf, :by "root", :at 1522256944775, :text "|Lumo has many features. I just don't have enough time to list all of them...", :id "H1ex6iSK5G"}
+           "j" {:type :leaf, :by "root", :at 1522371936200, :text "|Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine. It starts up instantaneously and has out-of-the-box access to the entire Node.js ecosystem.\n\nTo install:\n\n```bash\n$ brew install lumo\n# or\n$ npm install -g lumo-cljs\n```\n\nAfter installed, you will a CLI tool called `lumo`.\n\n### REPL\n\n```bash\n=>> lumo\nLumo 1.8.0\nClojureScript 1.9.946\nNode.js v9.2.0\n Docs: (doc function-name-here)\n       (find-doc \"part-of-name-here\")\n Source: (source function-name-here)\n Exit: Control+D or :cljs/quit or exit\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```\n\n### Node.js & npm modules\n\nAccess Node.js built-in variables with js interop:\n\n```clojure\n(.log js/console js/process.argv)\n```\n\nLoad npm modules from `node_modules/` with `js/require`:\n\n```bash\ncljs.user=> (def escape-html (js/require \"escape-html\"))\n#'cljs.user/escape-html\ncljs.user=> (escape-html \"<div />\")\n\"&lt;div /&gt;\"\n```\n\nAlso possible to specify dependencies in side `ns` form:\n\n```clojure\n(ns app.main (:require [\"fs\" :as fs]))\n\n(fs/readFileSync \"package.json\" \"utf8\")\n```\n\n### Interpreter\n\nRun a file\n\n```bash\n$ lumo main.cljs\n```\n\n### CLI arguments\n\nTo reaRead\n\n```bash\n$ lumo -h\n```\n\n### More...\n\nFind out more on [Wiki](https://github.com/anmonteiro/lumo/wiki)...", :id "H1ex6iSK5G"}
            "r" {
             :type :expr, :by "root", :at 1522256833493, :id "SJfKpjBtqM"
             :data {
              "T" {:type :leaf, :by "root", :at 1522256833850, :text "{}", :id "HkZFaiHK5M"}
+             "j" {
+              :type :expr, :by "root", :at 1522371005397, :id "SkZS6t-j9G"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1522371023673, :text ":highlight", :id "rJgSTF-iqM"}
+               "j" {
+                :type :expr, :by "root", :at 1522371027032, :id "B1GsRY-oqz"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1522371028046, :text "fn", :id "ryZO0YZjqM"}
+                 "j" {
+                  :type :expr, :by "root", :at 1522371028816, :id "rygT0FWjcM"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1522371029676, :text "code", :id "r1Zh0Kbjqf"}
+                   "j" {:type :leaf, :by "root", :at 1522371030241, :text "lang", :id "SkWRCKZjqM"}
+                  }
+                 }
+                 "r" {
+                  :type :expr, :by "root", :at 1522371038572, :id "SJDkqZscM"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1522371039093, :text "if", :id "SJDkqZscMleaf"}
+                   "j" {
+                    :type :expr, :by "root", :at 1522371039385, :id "SJXvy5-j9G"
+                    :data {
+                     "T" {:type :leaf, :by "root", :at 1522371045489, :text "contains?", :id "HkfD15bj5M"}
+                     "j" {:type :leaf, :by "root", :at 1522371052772, :text "supported-langs", :id "rk1g9-oqG"}
+                     "r" {:type :leaf, :by "root", :at 1522371054308, :text "lang", :id "Sy8ec-j5f"}
+                    }
+                   }
+                   "r" {
+                    :type :expr, :by "root", :at 1522371054897, :id "rklDl9bo5z"
+                    :data {
+                     "T" {:type :leaf, :by "root", :at 1522371056892, :text ".-value", :id "rklDl9bo5zleaf"}
+                     "j" {
+                      :type :expr, :by "root", :at 1522371057480, :id "S1NFeqWs9G"
+                      :data {
+                       "T" {:type :leaf, :by "root", :at 1522371059450, :text ".highlight", :id "H1XKgqbs5G"}
+                       "j" {:type :leaf, :by "root", :at 1522371064056, :text "hljs", :id "By3lqWsqG"}
+                       "n" {:type :leaf, :by "root", :at 1522371079152, :text "lang", :id "HJ1G5bi9f"}
+                       "r" {:type :leaf, :by "root", :at 1522371072206, :text "code", :id "r1vb9bicf"}
+                      }
+                     }
+                    }
+                   }
+                   "v" {
+                    :type :expr, :by "root", :at 1522371113516, :id "HklZV5-i5z"
+                    :data {
+                     "D" {:type :leaf, :by "root", :at 1522371114620, :text "escape-html", :id "BJGVcWocG"}
+                     "T" {:type :leaf, :by "root", :at 1522371081982, :text "code", :id "rkgezqZjcG"}
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
             }
            }
           }
@@ -898,6 +978,42 @@
            }
           }
          }
+         "v" {
+          :type :expr, :by "root", :at 1522256454843, :id "Bk6VvWsqf"
+          :data {
+           "T" {:type :leaf, :by "root", :at 1522256455266, :text "{}", :id "rJ1LqStcf"}
+           "j" {
+            :type :expr, :by "root", :at 1522256456181, :id "rJxxIqHF9M"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1522256458605, :text ":title", :id "ByxUcrtqz"}
+             "j" {:type :leaf, :by "root", :at 1522370358883, :text "|Wiki", :id "Skl78qrtcM"}
+            }
+           }
+           "r" {
+            :type :expr, :by "root", :at 1522256465670, :id "r1cLqrt5G"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1522256468109, :text ":url", :id "r1cLqrt5Gleaf"}
+             "j" {:type :leaf, :by "root", :at 1522370361132, :text "|https://github.com/anmonteiro/lumo/wiki", :id "S1ePcrFcf"}
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+     "supported-langs" {
+      :type :expr, :by "root", :at 1522371083700, :id "Hyg4z5bj5f"
+      :data {
+       "T" {:type :leaf, :by "root", :at 1522371084312, :text "def", :id "BJbEG5-oqf"}
+       "j" {:type :leaf, :by "root", :at 1522371083700, :text "supported-langs", :id "SkMEz9Zscf"}
+       "r" {
+        :type :expr, :by "root", :at 1522371083700, :id "ry7Ef5Wj9f"
+        :data {
+         "T" {:type :leaf, :by "root", :at 1522371086528, :text "#{}", :id "SkWHzcZj5M"}
+         "j" {:type :leaf, :by "root", :at 1522371089672, :text "\"clojure", :id "HkevMcZjcf"}
+         "r" {:type :leaf, :by "root", :at 1522371091278, :text "\"bash", :id "HJQqG9biqM"}
+         "v" {:type :leaf, :by "root", :at 1522371092547, :text "\"js", :id "SyEsf5Zj9f"}
         }
        }
       }
@@ -1029,6 +1145,42 @@
           }
          }
         }
+        "yy" {
+         :type :expr, :by "root", :at 1522370897033, :id "HkgY8Fbs5M"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1522370897399, :text "[]", :id "HkgY8Fbs5Mleaf"}
+          "j" {:type :leaf, :by "root", :at 1522370901509, :text "\"highlight.js", :id "Skc8tZsqf"}
+          "r" {:type :leaf, :by "root", :at 1522370902001, :text ":as", :id "B1A8FbjcM"}
+          "v" {:type :leaf, :by "root", :at 1522370903834, :text "hljs", :id "ByQAUY-icf"}
+         }
+        }
+        "yyT" {
+         :type :expr, :by "root", :at 1522370904502, :id "rJGxDYbj5z"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1522370905059, :text "[]", :id "rJGxDYbj5zleaf"}
+          "j" {:type :leaf, :by "root", :at 1522370906371, :text "\"highlight.js/lib/languages/clojure", :id "SJb-PF-ocz"}
+          "r" {:type :leaf, :by "root", :at 1522370907790, :text ":as", :id "BymwFWiqz"}
+          "v" {:type :leaf, :by "root", :at 1522370914949, :text "clojure-lang", :id "HJzNvFZi9f"}
+         }
+        }
+        "yyj" {
+         :type :expr, :by "root", :at 1522370904502, :id "r10Dt-iqf"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1522370905059, :text "[]", :id "rJGxDYbj5zleaf"}
+          "j" {:type :leaf, :by "root", :at 1522370920417, :text "\"highlight.js/lib/languages/bash", :id "SJb-PF-ocz"}
+          "r" {:type :leaf, :by "root", :at 1522370907790, :text ":as", :id "BymwFWiqz"}
+          "v" {:type :leaf, :by "root", :at 1522370922345, :text "bash-lang", :id "HJzNvFZi9f"}
+         }
+        }
+        "yyr" {
+         :type :expr, :by "root", :at 1522370904502, :id "ry2qYZocf"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1522370905059, :text "[]", :id "rJGxDYbj5zleaf"}
+          "j" {:type :leaf, :by "root", :at 1522370968333, :text "\"highlight.js/lib/languages/javascript", :id "SJb-PF-ocz"}
+          "r" {:type :leaf, :by "root", :at 1522370907790, :text ":as", :id "BymwFWiqz"}
+          "v" {:type :leaf, :by "root", :at 1522370970526, :text "javascript-lang", :id "HJzNvFZi9f"}
+         }
+        }
        }
       }
      }
@@ -1118,6 +1270,33 @@
        "r" {
         :type :expr, :time 1499755354983, :id "BkX6juY5aB-"
         :data {}
+       }
+       "t" {
+        :type :expr, :by "root", :at 1522370926663, :id "rywdFboqG"
+        :data {
+         "T" {:type :leaf, :by "root", :at 1522370935010, :text ".registerLanguage", :id "rywdFboqGleaf"}
+         "j" {:type :leaf, :by "root", :at 1522370937873, :text "hljs", :id "BygJFYWiqz"}
+         "r" {:type :leaf, :by "root", :at 1522370940093, :text "\"clojure", :id "By-MtY-ocG"}
+         "v" {:type :leaf, :by "root", :at 1522370942205, :text "clojure-lang", :id "rkUEttZo9G"}
+        }
+       }
+       "u" {
+        :type :expr, :by "root", :at 1522370926663, :id "S1_tYbjcz"
+        :data {
+         "T" {:type :leaf, :by "root", :at 1522370935010, :text ".registerLanguage", :id "rywdFboqGleaf"}
+         "j" {:type :leaf, :by "root", :at 1522370937873, :text "hljs", :id "BygJFYWiqz"}
+         "r" {:type :leaf, :by "root", :at 1522370948611, :text "\"bash", :id "By-MtY-ocG"}
+         "v" {:type :leaf, :by "root", :at 1522370946686, :text "bash-lang", :id "rkUEttZo9G"}
+        }
+       }
+       "uT" {
+        :type :expr, :by "root", :at 1522370926663, :id "SJx_FFZi5M"
+        :data {
+         "T" {:type :leaf, :by "root", :at 1522370935010, :text ".registerLanguage", :id "rywdFboqGleaf"}
+         "j" {:type :leaf, :by "root", :at 1522370937873, :text "hljs", :id "BygJFYWiqz"}
+         "r" {:type :leaf, :by "root", :at 1522370958768, :text "\"js", :id "By-MtY-ocG"}
+         "v" {:type :leaf, :by "root", :at 1522370956025, :text "javascript-lang", :id "rkUEttZo9G"}
+        }
        }
        "v" {
         :type :expr, :time 1499755354983, :id "S1EpoOF96Sb"

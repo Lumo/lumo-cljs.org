@@ -28,3 +28,8 @@ body * {
 ::-webkit-resizer{
   background-color:transparent;
 }
+
+pre.md-code-block {
+  background-color: black;
+  padding: 8px;
+}
