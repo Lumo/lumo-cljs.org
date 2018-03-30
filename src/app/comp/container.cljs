@@ -46,7 +46,7 @@
  comp-intro
  ()
  (div
-  {:style (merge ui/center {:font-size 16, :padding 16})}
+  {:style (merge ui/center {:font-size 16, :padding 16}), :class-name "intro"}
   (comp-md-block
    "Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine. It starts up instantaneously and has out-of-the-box access to the entire Node.js ecosystem.\n\nTo install:\n\n```bash\n$ brew install lumo\n# or\n$ npm install -g lumo-cljs\n```\n\nAfter installed, you will a CLI tool called `lumo`.\n\n### REPL\n\n```bash\n=>> lumo\nLumo 1.8.0\nClojureScript 1.9.946\nNode.js v9.2.0\n Docs: (doc function-name-here)\n       (find-doc \"part-of-name-here\")\n Source: (source function-name-here)\n Exit: Control+D or :cljs/quit or exit\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```\n\n### Node.js & npm modules\n\nAccess Node.js built-in variables with js interop:\n\n```clojure\n(.log js/console js/process.argv)\n```\n\nLoad npm modules from `node_modules/` with `js/require`:\n\n```bash\ncljs.user=> (def escape-html (js/require \"escape-html\"))\n#'cljs.user/escape-html\ncljs.user=> (escape-html \"<div />\")\n\"&lt;div /&gt;\"\n```\n\nAlso possible to specify dependencies in side `ns` form:\n\n```clojure\n(ns app.main (:require [\"fs\" :as fs]))\n\n(fs/readFileSync \"package.json\" \"utf8\")\n```\n\n### Interpreter\n\nRun a file\n\n```bash\n$ lumo main.cljs\n```\n\n### CLI arguments\n\nTo reaRead\n\n```bash\n$ lumo -h\n```\n\n### More...\n\nFind out more on [Wiki](https://github.com/anmonteiro/lumo/wiki)..."
    {:highlight (fn [code lang]

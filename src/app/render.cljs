@@ -5,19 +5,26 @@
             [app.comp.container :refer [comp-container]]
             [app.schema :as schema]
             [reel.schema :as reel-schema]
-            [cljs.reader :refer [read-string]]))
+            [cljs.reader :refer [read-string]]
+            [app.schema :refer [dev?]]))
 
 (def base-info
   {:title "Lumo: Fast, cross-platform, standalone ClojureScript environment.",
    :icon "http://cdn.tiye.me/logo/lumo.png",
    :ssr nil,
    :inline-html nil,
-   :inline-styles [(slurp "./entry/main.css")]})
+   :inline-styles [(if dev? "" (slurp "./entry/main.css"))
+                   (slurp "./node_modules/highlight.js/styles/github-gist.css")]})
 
 (defn dev-page []
   (make-page
    ""
-   (merge base-info {:styles ["http://localhost:8100/main.css"], :scripts ["/main.js"]})))
+   (merge
+    base-info
+    {:styles (if dev?
+       ["http://localhost:8100/main.css" "/entry/main.css"]
+       ["http://localhost:8100/main.css"]),
+     :scripts ["/main.js"]})))
 
 (def preview? (= "preview" js/process.env.prod))
 

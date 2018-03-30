@@ -29,7 +29,17 @@ body * {
   background-color:transparent;
 }
 
-pre.md-code-block {
+.intro .md-block pre.md-code-block {
   background-color: black;
-  padding: 8px;
+  padding: 16px;
+  font-size: 14px;
 }
+
+.intro .md-block {
+    width: 800px;
+    margin: auto;
+}
+
+.intro .md-block .md-p code {
+    font-family: Source Code Pro, Menlo, monospace;background-color: #0000004a;color: white;display: inline-block;padding: 0 8px;border-radius: 8px;
+    line-height: 23px;}
