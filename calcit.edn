@@ -57,6 +57,7 @@
             "xT" {:type :leaf, :author "rJG4IHzWf", :time 1512359490531, :text "textarea", :id "BJtB8rGbG"}
             "y" {:type :leaf, :author "root", :time 1499755354983, :text "span", :id "r1Aj_YqaB-"}
             "yT" {:type :leaf, :by "root", :at 1522256539667, :text "a", :id "r1VocBtqM"}
+            "yj" {:type :leaf, :by "root", :at 1522689645796, :text "img", :id "rylBO8kgjM"}
            }
           }
          }
@@ -623,19 +624,33 @@
                     }
                    }
                    "r" {
-                    :type :expr, :by "root", :at 1522256388064, :id "ryemhZcBYqG"
+                    :type :expr, :by "root", :at 1522689706410, :id "BkGGnUkgiG"
                     :data {
-                     "T" {:type :leaf, :by "root", :at 1522256388064, :text ":background-color", :id "HJbQ2Z9HYqM"}
+                     "T" {:type :leaf, :by "root", :at 1522689710698, :text ":border", :id "BkGGnUkgiGleaf"}
                      "j" {
-                      :type :expr, :by "root", :at 1522256388064, :id "rkf73Z5BYqG"
+                      :type :expr, :by "root", :at 1522689721250, :id "ryb-68ylof"
                       :data {
-                       "T" {:type :leaf, :by "root", :at 1522256388064, :text "hsl", :id "HJX73WqrYcM"}
-                       "j" {:type :leaf, :by "root", :at 1522256388064, :text "230", :id "r1VmhW5HFcz"}
-                       "r" {:type :leaf, :by "root", :at 1522256388064, :text "80", :id "BJrQhZ5HF9G"}
-                       "v" {:type :leaf, :by "root", :at 1522256388064, :text "70", :id "Sy8Q2W5Stqz"}
-                       "x" {:type :leaf, :by "root", :at 1522256388064, :text "0.2", :id "Hkvm2b5StcG"}
+                       "D" {:type :leaf, :by "root", :at 1522689737507, :text "str", :id "rkfaL1xjM"}
+                       "T" {:type :leaf, :by "root", :at 1522689721007, :text "|1px solid ", :id "H1bD3IyxiG"}
+                       "j" {
+                        :type :expr, :by "root", :at 1522689724770, :id "rJH6Uygif"
+                        :data {
+                         "T" {:type :leaf, :by "root", :at 1522689725236, :text "hsl", :id "rkg4T8Jxsf"}
+                         "j" {:type :leaf, :by "root", :at 1522689726400, :text "0", :id "SyUpUJxsM"}
+                         "r" {:type :leaf, :by "root", :at 1522689726709, :text "0", :id "B1PTLkxiG"}
+                         "v" {:type :leaf, :by "root", :at 1522689727454, :text "100", :id "Sy-Pp81gof"}
+                         "x" {:type :leaf, :by "root", :at 1522689756440, :text "0.2", :id "ryO68keof"}
+                        }
+                       }
                       }
                      }
+                    }
+                   }
+                   "v" {
+                    :type :expr, :by "root", :at 1522689743909, :id "Hyeu08yloM"
+                    :data {
+                     "T" {:type :leaf, :by "root", :at 1522689746361, :text ":border-radius", :id "Hyeu08yloMleaf"}
+                     "j" {:type :leaf, :by "root", :at 1522689766751, :text "|8px", :id "S1iCL1liM"}
                     }
                    }
                   }
@@ -743,6 +758,33 @@
             :data {
              "T" {:type :leaf, :by "root", :at 1522256388064, :text "<>", :id "r1pB3-qSFcM"}
              "j" {:type :leaf, :by "root", :at 1522256388064, :text "\"Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine.", :id "rkRH3WqBFcG"}
+            }
+           }
+           "t" {
+            :type :expr, :by "root", :at 1522689654727, :id "rkJtL1xsG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1522689656204, :text "=<", :id "rkJtL1xsGleaf"}
+             "j" {:type :leaf, :by "root", :at 1522689656662, :text "8", :id "BkbgYL1xiG"}
+             "r" {:type :leaf, :by "root", :at 1522689657222, :text "nil", :id "rJlWKUygoG"}
+            }
+           }
+           "v" {
+            :type :expr, :by "root", :at 1522689635371, :id "rJesP8JejG"
+            :data {
+             "T" {:type :leaf, :by "root", :at 1522689636333, :text "img", :id "rJesP8JejGleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1522689639112, :id "HJx1OUJeoG"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1522689639449, :text "{}", :id "H1JdLygjf"}
+               "j" {
+                :type :expr, :by "root", :at 1522689640218, :id "BJlluUyesG"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1522689641394, :text ":src", :id "SkeO81liM"}
+                 "j" {:type :leaf, :by "root", :at 1522689642103, :text "|https://img.shields.io/npm/v/lumo-cljs.svg", :id "ByGOIyxjf"}
+                }
+               }
+              }
+             }
             }
            }
           }

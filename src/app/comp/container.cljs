@@ -4,7 +4,7 @@
             [respo-ui.core :as ui]
             [respo.macros
              :refer
-             [defcomp cursor-> action-> mutation-> list-> <> div button textarea span a]]
+             [defcomp cursor-> action-> mutation-> list-> <> div button textarea span a img]]
             [verbosely.core :refer [verbosely!]]
             [respo.comp.space :refer [=<]]
             [reel.comp.reel :refer [comp-reel]]
@@ -42,7 +42,9 @@
              :height 200}})
    (=< 80 nil)
    (div
-    {:style {:padding "8px 16px", :background-color (hsl 230 80 70 0.2)}}
+    {:style {:padding "8px 16px",
+             :border (str "1px solid " (hsl 0 0 100 0.2)),
+             :border-radius "8px"}}
     (comp-md-block
      "```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.8.0\nClojureScript 1.9.946\nNode.js v9.2.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```"
      {:style {},
@@ -51,7 +53,9 @@
   (div
    {:style {:font-family ui/font-fancy, :color :white, :font-size 24, :font-weight 100}}
    (<>
-    "Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine."))))
+    "Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine.")
+   (=< 8 nil)
+   (img {:src "https://img.shields.io/npm/v/lumo-cljs.svg"}))))
 
 (def supported-langs #{"clojure" "bash" "js"})
 
