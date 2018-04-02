@@ -25,7 +25,7 @@
     {:href "https://github.com/Lumo/lumo-cljs.org",
      :style {:color (hsl 240 80 80)},
      :target "_blank",
-     :inner-text "Side built with ClojureScript."}))))
+     :inner-text "Site built with ClojureScript."}))))
 
 (defcomp
  comp-hero
