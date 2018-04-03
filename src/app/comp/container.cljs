@@ -109,7 +109,7 @@
  (reel)
  (let [store (:store reel), states (:states store)]
    (div
-    {:style (merge ui/global)}
+    {:style (merge ui/global {:background-color :white})}
     (comp-hero)
     (comp-links-bar)
     (comp-video)

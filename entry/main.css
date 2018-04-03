@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-display: optional;
+  background-color: rgb(32, 42, 49);
 }
 
 body * {
@@ -9,16 +10,16 @@ body * {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: hsla(0,0%,100%);
+  background-color: hsl(0, 0%, 85%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsla(200,100%,76%,0.8);
+  background-color: hsl(208, 20%, 16%);
 }
 
 ::-webkit-scrollbar-corner {

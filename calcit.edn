@@ -239,6 +239,19 @@
                 :data {
                  "T" {:type :leaf, :author "root", :time 1499755354983, :text "merge", :id "BydGiOKqpHW"}
                  "j" {:type :leaf, :author "root", :time 1499755354983, :text "ui/global", :id "rktMsOY56HW", :at 1521129814235, :by "root"}
+                 "r" {
+                  :type :expr, :by "root", :at 1522775690260, :id "Sygf5IVZiz"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1522775690665, :text "{}", :id "r1z9LVZoz"}
+                   "j" {
+                    :type :expr, :by "root", :at 1522775690934, :id "HJz7qIV-iz"
+                    :data {
+                     "T" {:type :leaf, :by "root", :at 1522775694495, :text ":background-color", :id "BkbmqLEWiM"}
+                     "j" {:type :leaf, :by "root", :at 1522775696153, :text ":white", :id "HkwqLEZiG"}
+                    }
+                   }
+                  }
+                 }
                 }
                }
               }
