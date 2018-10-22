@@ -3,10 +3,6 @@
   (:require ["child_process" :as child-process]
             [app.config :as config]))
 
-(def configs {:orgization "Lumo"
-              :name "lumo-cljs.org"
-              :cdn "lumo-cljs-org"})
-
 (defn sh! [command]
   (println command)
   (println (.toString (child-process/execSync command))))
