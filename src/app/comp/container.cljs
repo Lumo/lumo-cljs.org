@@ -5,7 +5,6 @@
             [respo.macros
              :refer
              [defcomp cursor-> action-> mutation-> list-> <> div button textarea span a img]]
-            [verbosely.core :refer [verbosely!]]
             [respo.comp.space :refer [=<]]
             [reel.comp.reel :refer [comp-reel]]
             [respo-md.comp.md :refer [comp-md comp-md-block]]
