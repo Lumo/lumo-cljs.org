@@ -14,9 +14,9 @@ After installed, you will get a CLI tool called `lumo`.
 
 ```bash
 =>> lumo
-Lumo 1.8.0
-ClojureScript 1.9.946
-Node.js v9.2.0
+Lumo 1.10.1
+ClojureScript 1.10.520
+Node.js v11.13.0
  Docs: (doc function-name-here)
        (find-doc "part-of-name-here")
  Source: (source function-name-here)

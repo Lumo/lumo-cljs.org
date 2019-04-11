@@ -680,7 +680,7 @@
               :type :expr, :by "root", :at 1522256388064, :id "r1d73bqrYqM"
               :data {
                "T" {:type :leaf, :by "root", :at 1522256388064, :text "comp-md-block", :id "r1Fm3bqHtqM"}
-               "j" {:type :leaf, :by "root", :at 1522371405077, :text "\"```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.8.0\nClojureScript 1.9.946\nNode.js v9.2.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```", :id "ry57nb5SYqf"}
+               "j" {:type :leaf, :by "rJG4IHzWf", :at 1555004598666, :text "\"```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.10.1\nClojureScript 1.10.520\nNode.js v11.13.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```", :id "ry57nb5SYqf"}
                "r" {
                 :type :expr, :by "root", :at 1522256388064, :id "BJiXnZ5rF5f"
                 :data {

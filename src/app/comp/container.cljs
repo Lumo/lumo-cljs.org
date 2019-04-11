@@ -46,7 +46,7 @@
              :border (str "1px solid " (hsl 0 0 100 0.2)),
              :border-radius "8px"}}
     (comp-md-block
-     "```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.8.0\nClojureScript 1.9.946\nNode.js v9.2.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```"
+     "```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.10.1\nClojureScript 1.10.520\nNode.js v11.13.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```"
      {:style {},
       :css "pre code {\ncolor: white;\nline-height: 1.6em;\nfont-family: Source Code Pro, Menlo, Courier, monospace;\n}"})))
   (=< nil 40)
