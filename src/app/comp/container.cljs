@@ -2,7 +2,7 @@
 (ns app.comp.container
   (:require [hsl.core :refer [hsl]]
             [respo-ui.core :as ui]
-            [respo.macros
+            [respo.core
              :refer
              [defcomp cursor-> action-> mutation-> list-> <> div button textarea span a img]]
             [respo.comp.space :refer [=<]]
@@ -12,7 +12,7 @@
             [respo.util.list :refer [map-with-idx]]
             ["highlight.js" :as hljs]
             ["escape-html" :as escape-html]
-            [build.util :refer [inline-resource]]))
+            [shadow.resource :refer [inline]]))
 
 (defcomp
  comp-footer
@@ -65,7 +65,7 @@
  (div
   {:style (merge ui/center {:font-size 16, :padding 16}), :class-name "intro"}
   (comp-md-block
-   (inline-resource "content.md")
+   (inline "content.md")
    {:highlight (fn [code lang]
       (if (contains? supported-langs lang)
         (.-value (.highlight hljs lang code))

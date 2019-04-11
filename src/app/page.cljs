@@ -7,8 +7,7 @@
             [reel.schema :as reel-schema]
             [cljs.reader :refer [read-string]]
             [app.config :as config]
-            [app.util :refer [get-env!]]
-            [build.util :refer [get-ip!]])
+            [cumulo-util.build :refer [get-ip!]])
   (:require-macros [clojure.core.strint :refer [<<]]))
 
 (def base-info
@@ -23,13 +22,11 @@
      :scripts ["/client.js"],
      :inline-styles [(slurp "./node_modules/highlight.js/styles/github-gist.css")]})))
 
-(def local-bundle? (= "local-bundle" (get-env! "mode")))
-
 (defn prod-page []
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
         assets (read-string (slurp "dist/assets.edn"))
-        cdn (if local-bundle? "" (:cdn-url config/site))
+        cdn (if config/cdn? (:cdn-url config/site) "")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
      html-content
@@ -42,8 +39,7 @@
                        (slurp "./node_modules/highlight.js/styles/github-gist.css")]}))))
 
 (defn main! []
-  (if (contains? config/bundle-builds (get-env! "mode"))
-    (spit "dist/index.html" (prod-page))
-    (spit "target/index.html" (dev-page))))
-
-(def preview? (= "preview" js/process.env.prod))
+  (println "Running mode:" (if config/dev? "dev" "release"))
+  (if config/dev?
+    (spit "target/index.html" (dev-page))
+    (spit "dist/index.html" (prod-page))))
