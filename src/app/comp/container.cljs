@@ -31,7 +31,7 @@
  comp-hero
  ()
  (div
-  {:style (merge ui/center {:height 600, :background-color "rgb(32, 42, 49)"})}
+  {:style (merge ui/center {:height 400, :background-color "rgb(32, 42, 49)"})}
   (div
    {:style (merge ui/row-center)}
    (div
@@ -49,7 +49,7 @@
      "```\n$ npm install -g lumo-cljs\n$ lumo\nLumo 1.10.1\nClojureScript 1.10.520\nNode.js v11.13.0\n\ncljs.user=> (println (+ 1 2 3))\n6\nnil\ncljs.user=>\n```"
      {:style {},
       :css "pre code {\ncolor: white;\nline-height: 1.6em;\nfont-family: Source Code Pro, Menlo, Courier, monospace;\n}"})))
-  (=< nil 40)
+  (=< nil 24)
   (div
    {:style {:font-family ui/font-fancy, :color :white, :font-size 24, :font-weight 100}}
    (<>
@@ -75,13 +75,18 @@
   [{:title "GitHub", :url "https://github.com/anmonteiro/lumo"}
    {:title "Slack", :url "https://clojurians.slack.com/messages/lumo"}
    {:title "Blog", :url "https://anmonteiro.com/"}
-   {:title "Wiki", :url "https://github.com/anmonteiro/lumo/wiki"}])
+   {:title "Wiki", :url "https://github.com/anmonteiro/lumo/wiki"}
+   {:title "Video", :url ""}])
 
 (defcomp
  comp-links-bar
  ()
  (list->
-  {:style (merge ui/row-center {:padding 16, :background-color (hsl 240 40 94)})}
+  {:style (merge
+           ui/row-center
+           {:padding 16,
+            :background-color "rgb(32, 42, 49)",
+            :border-bottom (str "1px solid " (hsl 0 0 100 0.08))})}
   (->> site-links
        (map-with-idx
         (fn [link]
@@ -110,9 +115,11 @@
  (let [store (:store reel), states (:states store)]
    (div
     {:style (merge ui/global {:background-color :white})}
-    (comp-hero)
     (comp-links-bar)
+    (comp-hero)
+    (=< nil 48)
     (comp-video)
     (comp-intro)
+    (=< nil 48)
     (comp-footer)
     (when dev? (cursor-> :reel comp-reel states reel {})))))

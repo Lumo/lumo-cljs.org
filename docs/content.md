@@ -1,6 +1,21 @@
-"Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine. It starts up instantaneously and has out-of-the-box access to the entire Node.js ecosystem.
+Lumo is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine. It starts up instantaneously and has out-of-the-box access to the entire Node.js ecosystem.
 
-To install:
+* [Install](https://github.com/anmonteiro/lumo/wiki/Install)
+* [Run](https://github.com/anmonteiro/lumo/wiki/Run)
+* [Compatible Libs](https://github.com/anmonteiro/lumo/wiki/Compatible-libraries)
+* [Invoke Node](https://github.com/anmonteiro/lumo/wiki/Invoke-node)
+* [Command Line Options](https://github.com/anmonteiro/lumo/wiki/Cli-options)
+
+Read blogs to know Lumo:
+
+* [The fastest Clojure REPL in the world](https://anmonteiro.com/2016/11/the-fastest-clojure-repl-in-the-world/)
+* [Compiling ClojureScript Projects Without the JVM](https://anmonteiro.com/2017/02/compiling-clojurescript-projects-without-the-jvm/)
+* [Lumo: Brightening the Horizons for Clojurescript'ing](http://benzaporzan.me/blog/2018/3/26/lumo_brightening_the_horizons_for_clojurescripting/)
+* [Node.js to Clojure in 60 seconds](https://medium.com/front-end-hacking/node-js-to-clojure-in-60-seconds-a996e0969471)
+
+### REPL
+
+Simplest way to install lumo:
 
 ```bash
 $ brew install lumo
@@ -10,10 +25,8 @@ $ npm install -g lumo-cljs
 
 After installed, you will get a CLI tool called `lumo`.
 
-### REPL
-
 ```bash
-=>> lumo
+$ lumo
 Lumo 1.10.1
 ClojureScript 1.10.520
 Node.js v11.13.0
@@ -70,14 +83,3 @@ To view all supported CLI options:
 ```bash
 $ lumo -h
 ```
-
-### More
-
-Read blogs to known Lumo:
-
-* [The fastest Clojure REPL in the world](https://anmonteiro.com/2016/11/the-fastest-clojure-repl-in-the-world/)
-* [Compiling ClojureScript Projects Without the JVM](https://anmonteiro.com/2017/02/compiling-clojurescript-projects-without-the-jvm/)
-* [Lumo: Brightening the Horizons for Clojurescript'ing](http://benzaporzan.me/blog/2018/3/26/lumo_brightening_the_horizons_for_clojurescripting/)
-* [Node.js to Clojure in 60 seconds](https://medium.com/front-end-hacking/node-js-to-clojure-in-60-seconds-a996e0969471)
-
-Find out more on [Wiki](https://github.com/anmonteiro/lumo/wiki).
