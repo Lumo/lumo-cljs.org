@@ -1,0 +1,6 @@
+
+{:host "lumo-cljs.org"
+ :uploads [{:from "dist/*"
+            :to "cdn/lumo-cljs.org/"}
+           {:from "dist/{index.html,manifest.json}"
+            :to "repo/mvc-works/lumo-cljs-org/"}]}
