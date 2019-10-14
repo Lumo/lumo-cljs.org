@@ -1,14 +1,16 @@
 
-[Lumo](https://github.com/anmonteiro/lumo)'s home page
+[Lumo](https://github.com/anmonteiro/lumo)'s home page (Unofficial)
 ----
 
-http://lumo-cljs.org
+Site http://lumo-cljs.org
 
-> not official though...
+### Contribute
+
+Content on the page is maintained at `docs/content.md`. Fork edit and PR.
 
 ### Workflow
 
-Workflow https://github.com/mvc-works/calcit-workflow
+To run the project, refer to https://github.com/mvc-works/calcit-workflow .
 
 ### License
 
