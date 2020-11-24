@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "escape-html": "^1.0.3",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "shortid": "^2.2.15"
   }
 }
